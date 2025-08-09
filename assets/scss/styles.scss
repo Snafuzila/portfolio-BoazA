@@ -249,15 +249,6 @@ img{
     &__subtitle{
         margin-bottom: var(--mb-2);
     }
-
-    &__img{
-        justify-self: center;
-        
-        & img{
-            width: 200px;
-            border-radius: .5rem;
-        }
-    }
 }
 
 /* ===== SKILLS =====*/
