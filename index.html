@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Portfolio</title>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Boaz A Portfolio</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+  <!-- Your CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="container">
       <h1>Boaz A</h1>
       <nav>
@@ -24,21 +31,21 @@
   </header>
 
   <main>
-    <section id="home">
+    <section id="home" class="section">
       <div class="container">
         <h2>Welcome to My Portfolio</h2>
         <p>High-level experience in web design and development.</p>
       </div>
     </section>
 
-    <section id="about">
+    <section id="about" class="section">
       <div class="container">
         <h2>About Me</h2>
         <p>Web developer with extensive knowledge and years of experience in web technologies and UI/UX design.</p>
       </div>
     </section>
 
-    <section id="services">
+    <section id="services" class="section">
       <div class="container">
         <h2>Services</h2>
         <ul>
@@ -50,34 +57,26 @@
       </div>
     </section>
 
-    <section id="portfolio">
-        <div class="container">
-            <h2>Portfolio</h2>
-            <p>Responsive websites adaptable to all devices with UI components and animated interactions.</p>
+    <section id="portfolio" class="section">
+      <div class="container">
+        <h2>Portfolio</h2>
 
-            <!-- Swiper slider starts here -->
-            <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <img src="assets/img/project1.jpg" alt="Project 1" />
-                </div>
-                <div class="swiper-slide">
-                <img src="assets/img/project2.jpg" alt="Project 2" />
-                </div>
-                <!-- Add more slides as needed -->
-            </div>
-            <!-- Pagination dots -->
-            <div class="swiper-pagination"></div>
-            </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/project1.jpg" alt="Project 1" /></div>
+            <div class="swiper-slide"><img src="assets/img/project2.jpg" alt="Project 2" /></div>
+            <div class="swiper-slide"><img src="assets/img/project3.jpg" alt="Project 3" /></div>
+          </div>
+          <div class="swiper-pagination"></div>
         </div>
+
+      </div>
     </section>
 
-
-
-    <section id="contact">
+    <section id="contact" class="section">
       <div class="container">
         <h2>Contact Me</h2>
-        <p>Reach out to discuss your next project.</p>
+        <p>You can reach me at <a href="mailto:boaz@example.com">boaz@example.com</a></p>
       </div>
     </section>
   </main>
@@ -88,16 +87,10 @@
     </div>
   </footer>
 
+  <!-- Swiper JS -->
   <script src="assets/js/swiper-bundle.min.js"></script>
-    <script>
-        const swiper = new Swiper('.swiper-container', {
-        loop: true,
-        pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-        },
-        });
-    </script>
+
+  <!-- Your JS -->
   <script src="assets/js/main.js"></script>
 </body>
 </html>

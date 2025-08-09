@@ -1,6 +1,8 @@
-/*==================== GOOGLE FONTS ====================*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -19,44 +21,70 @@ body {
   background-color: #6a0dad;
   color: white;
   padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .header h1 {
-  text-align: center;
   margin: 0;
+  text-align: center;
 }
 
 nav ul {
   list-style: none;
   padding: 0;
   text-align: center;
+  margin-top: 10px;
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #d3b3ff;
 }
 
 /* Sections */
-section {
-  padding: 40px 0;
+.section {
+  padding: 60px 0;
   text-align: center;
 }
 
-section h2 {
+.section h2 {
   font-size: 2rem;
   margin-bottom: 20px;
 }
 
-section p {
+.section p {
   font-size: 1rem;
   color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.section ul li {
+  background-color: white;
+  margin: 10px 0;
+  padding: 12px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* Footer */
@@ -66,15 +94,37 @@ footer {
   padding: 20px 0;
   text-align: center;
 }
+
+/* Swiper */
 .swiper-container {
   width: 100%;
-  height: 300px; /* adjust height as you want */
-  margin-top: 20px;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .swiper-slide img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 10px;
+}
+
+/* Scroll header style */
+.scroll-header {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  background-color: #5a0ca5;
+  transition: background-color 0.3s ease;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 8px 0;
+  }
 }
