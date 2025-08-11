@@ -232,15 +232,23 @@ img {
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 0; /* default for desktop */
   width: 260px;
+  transition: bottom 0.3s ease;
 }
+
 .home__blob {
   fill: var(--first-color);
   transform: translateY(45px);
-
+  transition: transform 0.3s ease;
 }
+
+/* On phones: raise the entire container and reduce transform */
 @media (max-width: 600px) {
+  .home__img {
+    bottom: 40px; /* push it up by 40px */
+    width: 200px; /* optional: smaller on phones */
+  }
   .home__blob {
     transform: translateY(10px);
   }
