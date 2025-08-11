@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
     <!--==================== MAIN JS ====================-->
     <script src="assets/js/main.js"></script>
     <!-- =====BOX ICONS===== -->
     <link
       href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
 
@@ -54,7 +60,7 @@
       <section class="home bd-grid" id="home">
         <div class="home__data">
           <h1 class="home__title">
-            Hi,<br />I'am <span class="home__title-color">Boaz</span><br />
+            Hi, I'm <span class="home__title-color">Boaz</span><br />
             Software Developer
           </h1>
         </div>
@@ -64,10 +70,16 @@
             <i class="bx bxl-linkedin"></i>
           </a>
           <a href="mailto:Boazattiya8@gmail.com" class="home__social-icon">
-            <i class='bx bx-envelope'></i> 
+            <i class='bx bx-envelope'></i>
           </a>
           <a href="https://github.com/Snafuzila" class="home__social-icon">
             <i class="bx bxl-github"></i>
+          </a>
+          <a href="assets\CV\BoazAttiyaResume.pdf" class="home__social-btn">
+            <i class="bx bxs-file-pdf"></i> <span>Download PDF  </span>
+          </a>
+          <a href="assets\CV\BoazAttiyaResume.docx" class="home__social-btn" download>
+            <i class="bx bxs-file-doc"></i> <span>Download DOCX</span>
           </a>
         </div>
 
@@ -134,28 +146,40 @@
                 <h5>Languages &amp; Technologies</h5>
                 <div class="logos">
                   <div class="logo">
-                    <img src="photos/icons8-c-programming-96.png" alt="C Logo" />
+                    <img src="assets\img\C.png" alt="C Logo" /><br />
                     <span>C</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/c++.png" alt="C++ Logo" />
+                    <img src="assets\img\cpp.svg" alt="C++ Logo" />
                     <span>C++</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/python.png" alt="Python Logo" />
+                    <img src="assets\img\python.svg" alt="Python Logo" />
                     <span>Python</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/html-5.png" alt="HTML5 Logo" />
+                    <img src="assets\img\html.svg" alt="HTML5 Logo" />
                     <span>HTML5</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/css-3.png" alt="CSS3 Logo" />
+                    <img src="assets\img\css.svg" alt="CSS3 Logo" />
                     <span>CSS3</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/js.png" alt="JavaScript Logo" />
+                    <img src="assets\img\javaScript.svg" alt="JavaScript Logo" />
                     <span>JavaScript</span>
+                  </div>
+                  <div class="logo">
+                    <img src="assets\img\java.svg" alt="Java Logo" />
+                    <span>Java</span>
+                  </div>
+                  <div class="logo">
+                    <img src="assets\img\assembly.svg" alt="Assembly Logo" />
+                    <span>Assembly</span>
+                  </div>
+                  <div class="logo">
+                    <img src="assets\img\kotlin.svg" alt="Kotlin Logo" />
+                    <span>Kotlin</span>
                   </div>
                 </div>
               </div>
@@ -165,26 +189,34 @@
                 <h5>Tools &amp; Platforms</h5>
                 <div class="logos">
                   <div class="logo">
-                    <img src="photos/git.png" alt="Git Logo" />
+                    <img src="assets\img\git.svg" alt="Git Logo" />
                     <span>Git</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/github.png" alt="GitHub Logo" />
+                    <img src="assets\img\gitHub.svg" alt="GitHub Logo" />
                     <span>GitHub</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/icons8-linux-96.png" alt="Linux Logo" />
+                    <img src="assets\img\Linux.svg" alt="Linux Logo" />
                     <span>Linux</span>
                   </div>
                   <div class="logo">
                     <img
-                      src="photos/icons8-bootstrap-240.png"
-                      alt="Bootstrap Logo"
-                    />
-                    <span>Bootstrap</span>
+                      src="assets\img\vsCode.svg" alt="VS-Code Logo" />
+                    <span>VS-Code</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/nodejs.png" alt="Node.js Logo" />
+                    <img
+                      src="assets\img\androidStudio.png" alt="Android Studio Logo" />
+                    <span>Android Studio</span>
+                  </div>
+                  <div class="logo">
+                    <img
+                      src="assets\img\virutalBox.png" alt="Virtual Box Logo" />
+                    <span>Virtual Box</span>
+                  </div>
+                  <div class="logo">
+                    <img src="assets\img\nodeJS.svg" alt="Node.js Logo" />
                     <span>Node.js</span>
                   </div>
                 </div>
@@ -196,22 +228,19 @@
                 <h5>Computer Science Foundations</h5>
                 <div class="logos">
                   <div class="logo">
-                    <img src="photos/deep-learning.png" alt="Algorithms Logo" />
+                    <img src="assets\img\algorithms.png" alt="Algorithms Logo" />
                     <span>Algorithms</span>
                   </div>
                   <div class="logo">
-                    <img
-                      src="photos/hierarchical-structure.png"
-                      alt="Data Structures Logo"
-                    />
+                    <img src="assets\img\dataStructure.png" alt="Data Structures Logo" />
                     <span>Data Structures</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/http.png" alt="Networking Logo" />
+                    <img src="assets\img\networking.png" alt="Networking Logo" />
                     <span>Networking</span>
                   </div>
                   <div class="logo">
-                    <img src="photos/oop.png" alt="OOP Logo" />
+                    <img src="assets\img\oop.png" alt="OOP Logo" />
                     <span>Object Oriented Programming</span>
                   </div>
                 </div>
@@ -247,7 +276,7 @@
         </div>
       </section>
 
-      <!--===== CONTACT =====-->
+      <!--===== CONTACT ===== will open if and when ill do a server to recieve emails
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
 
@@ -267,28 +296,41 @@
         </div>
       </section>
     </main>
-
+    -->
     <!--===== FOOTER =====-->
     <footer class="footer">
-      <p class="footer__title">Marlon</p>
-      <div class="footer__social">
-        <a href="#" class="footer__icon">
-          <i class="bx bxl-facebook"></i>
-        </a>
-        <a href="#" class="footer__icon">
-          <i class="bx bxl-instagram"></i>
-        </a>
-        <a href="#" class="footer__icon">
-          <i class="bx bxl-twitter"></i>
-        </a>
-      </div>
+      <p class="footer__title"></p>
+      <!--
+        <div class="footer__social">
+          <a href="#" class="footer__icon">
+            <i class="bx bxl-facebook"></i>
+          </a>
+          <a href="#" class="footer__icon">
+            <i class="bx bxl-instagram"></i>
+          </a>
+          <a href="#" class="footer__icon">
+            <i class="bx bxl-twitter"></i>
+          </a>
+        </div>
       <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
     </footer>
-
-    <!--===== SCROLL REVEAL =====-->
-    <script src="https://unpkg.com/scrollreveal"></script>
+-->
 
     <!--===== MAIN JS =====-->
-    <script src="assets/js/main.js"></script>
-  </body>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const sr = ScrollReveal({
+          origin: 'top',
+          distance: '60px',
+          duration: 2000,
+          delay: 200,
+          // reset: true,
+        });
+
+        sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .section-title',{}); 
+        sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
+        sr.reveal('.home__social-icon, .home__social-btn', { interval: 200 });
+        sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+      });
+    </script>  </body>
 </html>

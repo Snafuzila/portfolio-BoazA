@@ -241,14 +241,17 @@ img{
 }
 
 /* ===== ABOUT =====*/
-.about{
-    &__container{
-        row-gap: 2rem;
-        text-align: center;
-    }
-    &__subtitle{
-        margin-bottom: var(--mb-2);
-    }
+.about {
+  &__container {
+    display: grid;
+    justify-items: center; /* centers grid items horizontally */
+    row-gap: 2rem;
+  }
+  &__subtitle {
+    margin-bottom: var(--mb-2);
+    /* Explicitly center text */
+    text-align: center;
+  }
 }
 
 /* ===== SKILLS =====*/
