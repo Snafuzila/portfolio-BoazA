@@ -231,6 +231,8 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
+  transform: translateY(50px);
+
 }
 /*.home__blob-img {
   width: 360px;
