@@ -160,8 +160,6 @@ img {
   color: var(--second-color);
   font-size: 1.5rem;
   cursor: pointer;
-  position: relative;
-  z-index: 9999;
 }
 
 /*Active menu*/
@@ -199,11 +197,10 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
-  gap: var(--mb-2, 12px);
 }
 .home__social-icon {
   width: max-content;
-  /*margin-bottom: var(--mb-2);*/
+  margin-bottom: var(--mb-2);
   font-size: 1.5rem;
   color: var(--second-color);
 }
@@ -226,35 +223,18 @@ img {
 .home__social-btn span {
   font-size: 0.9rem; /* make text smaller than icon */
 }
-.home__social-icon i,
-.home__social-btn i {
-  vertical-align: middle;
-  line-height: 1;
-}
 .home__img {
   position: absolute;
   right: 0;
-  bottom: 0; /* default for desktop */
+  bottom: 0;
   width: 260px;
-  transition: bottom 0.3s ease;
 }
-
 .home__blob {
   fill: var(--first-color);
   transform: translateY(45px);
-  transition: transform 0.3s ease;
+
 }
 
-/* On phones: raise the entire container and reduce transform */
-@media (max-width: 600px) {
-  .home__img {
-    bottom: 40px; /* push it up by 40px */
-    width: 200px; /* optional: smaller on phones */
-  }
-  .home__blob {
-    transform: translateY(10px);
-  }
-}
 
 /*BUTTONS*/
 .button {
