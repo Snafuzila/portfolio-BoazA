@@ -197,10 +197,11 @@ img {
 .home__social {
   display: flex;
   flex-direction: column;
+  gap: var(--mb-2, 12px);
 }
 .home__social-icon {
   width: max-content;
-  margin-bottom: var(--mb-2);
+  /*margin-bottom: var(--mb-2);*/
   font-size: 1.5rem;
   color: var(--second-color);
 }
@@ -223,6 +224,11 @@ img {
 .home__social-btn span {
   font-size: 0.9rem; /* make text smaller than icon */
 }
+.home__social-icon i,
+.home__social-btn i {
+  vertical-align: middle;
+  line-height: 1;
+}
 .home__img {
   position: absolute;
   right: 0;
@@ -231,11 +237,13 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
-  transform: translateY(0px);
+  transform: translateY(45px);
 
 }
-/*.home__blob-img {
-  width: 360px;
+@media (max-width: 600px) {
+  .home__blob {
+    transform: translateY(10px);
+  }
 }
 
 /*BUTTONS*/
