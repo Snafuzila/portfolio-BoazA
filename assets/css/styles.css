@@ -231,7 +231,7 @@ img {
 }
 .home__blob {
   fill: var(--first-color);
-  transform: translateY(50px);
+  transform: translateY(0px);
 
 }
 /*.home__blob-img {
