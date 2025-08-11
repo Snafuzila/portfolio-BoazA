@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="assets/css/styles.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="assets/js/main.js"></script>
 
 
     <!-- =====BOX ICONS===== -->
@@ -17,7 +19,7 @@
       rel="stylesheet"
     />
 
-    <title>Portfolio website complete</title>
+    <title>Boaz's portfolio</title>
   </head>
   <body>
     <!--===== HEADER =====-->
@@ -41,9 +43,9 @@
             <li class="nav__item">
               <a href="#work" class="nav__link">Projects</a>
             </li>
-            <!--<li class="nav__item">
+            <li class="nav__item">
               <a href="#contact" class="nav__link">Contact</a>
-            </li> -->
+            </li>
           </ul>
         </div>
 
@@ -274,27 +276,22 @@
         </div>
       </section>
 
-      <!--===== CONTACT ===== will open if and when ill do a server to recieve emails
+      <!--===== CONTACT =====-->
       <section class="contact section" id="contact">
         <h2 class="section-title">Contact</h2>
-
         <div class="contact__container bd-grid">
-          <form action="" class="contact__form">
+          <form action="https://formsubmit.co/boazattiya8+portfolio@gmail.com" method="POST">
             <input type="text" placeholder="Name" class="contact__input" />
             <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea
-              name=""
-              id=""
-              cols="0"
-              rows="10"
-              class="contact__input"
-            ></textarea>
+            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
             <input type="button" value="Send Email" class="contact__button button" />
+            <!-- Enable CAPTCHA -->
+            <input type="hidden" name="_captcha" value="true" />
           </form>
         </div>
       </section>
     </main>
-    -->
+
     <!--===== FOOTER =====-->
     <footer class="footer">
       <p class="footer__title"></p>
@@ -320,15 +317,15 @@
         const sr = ScrollReveal({
           origin: 'top',
           distance: '60px',
-          duration: 2000,
-          delay: 200,
-          // reset: true,
+          duration: 1000,
+          delay: 150,
+          reset: true,
         });
 
         sr.reveal('.home__data, .about__img, .skills__subtitle, .skills__text, .section-title',{}); 
-        sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 400}); 
-        sr.reveal('.home__social-icon, .home__social-btn', { interval: 200 });
-        sr.reveal('.skills__data, .work__img, .contact__input',{interval: 200});
+        sr.reveal('.home__img, .about__subtitle, .about__text, .skills__img',{delay: 300}); 
+        sr.reveal('.home__social-icon, .home__social-btn', { interval: 150 });
+        sr.reveal('.skills__data, .work__img, .contact__input',{interval: 150});
       });
     </script> 
         <!--==================== MAIN JS ====================-->
