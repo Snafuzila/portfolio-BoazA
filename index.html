@@ -281,12 +281,19 @@
         <h2 class="section-title">Contact</h2>
         <div class="contact__container bd-grid">
           <form action="https://formsubmit.co/boazattiya8+portfolio@gmail.com" method="POST">
-            <input type="text" placeholder="Name" class="contact__input" />
-            <input type="mail" placeholder="Email" class="contact__input" />
-            <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-            <input type="button" value="Send Email" class="contact__button button" />
-            <!-- Enable CAPTCHA -->
+            <!-- required fields with names -->
+            <input type="text" name="name" placeholder="Name" class="contact__input" required />
+            <input type="email" name="email" placeholder="Email" class="contact__input" required />
+            <textarea name="message" placeholder="Your Message" class="contact__input" rows="6" required></textarea>
+
+            <!-- optional extras -->
+            <input type="hidden" name="_subject" value="New contact from portfolio" />
+            <input type="hidden" name="_next" value="https://your-domain-or-github-pages/thank-you.html" />
+            <!-- enable FormSubmit's CAPTCHA protection -->
             <input type="hidden" name="_captcha" value="true" />
+
+            <!-- submit button (must be submit) -->
+            <button type="submit" class="contact__button button">Send Email</button>
           </form>
         </div>
       </section>
